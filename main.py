@@ -1,18 +1,8 @@
 
-# Script out first then optimise program
-import pytest
 import random
 from gtts import gTTS
 import os
 import sys
-
-# Shell will loop through logic (X times) that looks like
-# 1. Algo that creates math question of random type
-#    Maths question taken from class with several methods
-#    First will be addition (<100) and multiplication <(12)
-# 2. Question then spoken through speaker
-# 3. Requires user response through cli
-# 4. Finish shell loop and report score
 
 class Question:
     def addition(self):
@@ -85,7 +75,7 @@ class Test:
 
         print("You scored {}/{}".format(self.score, self.length))
 
-run = Test(int(sys.argv[1])) # set when developing
+run = Test(int(sys.argv[1])) # set when developing e.g. 4
 run.loop_test()
 
 
