@@ -43,8 +43,8 @@ class Question:
 
     def read_question(self, q):
         myobj = gTTS(text=q, lang='en', slow=False)
-        myobj.save("welcome.mp3")
-        os.system("afplay welcome.mp3")
+        myobj.save("question.mp3")
+        os.system("afplay question.mp3")
 
 class Test:
     def __init__(self, length):
